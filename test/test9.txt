@@ -1,0 +1,30 @@
+print graph
+nx=500000 ny=1500000 |V|=2000000 |E|=9999823 N=100
+>>>> BscGd ans=242545610 _isolatedx_=0 _isolatedy_=254857
+add 13304400 0-edges
+doubled G
+mag N=200000100
+nx=2000000 ny=2000000 |V|=4000000 |E|=33304046 N=200000100 capacitysum=13304400
+print MWPDCS graph
+nx=2000000 ny=2000000 |V|=4000000 |E|=33304046 N=200000100 capacitysum=13304400
+N=200000100 L=28
+>>>> MWDCS ans=242545610 _isolatedx_=0 _isolatedy_=256069
+MWDCSW=242545610
+add 13304400 0-edges
+doubled G
+mag N=970182927091221
+nx=2000000 ny=2000000 |V|=4000000 |E|=33304046 N=970182927091221 capacitysum=13304400
+print MWPDCS graph
+nx=2000000 ny=2000000 |V|=4000000 |E|=33304046 N=970182927091221 capacitysum=13304400
+N=970182927091221 L=50
+>>>> LIMWS ans=234727731 _isolatedx_=0 _isolatedy_=7286
+
+>>>> BscGd ans=242545610 _isolatedx_=0 _isolatedy_=254857
+1s
+>>>> MWDCS ans=242545610 _isolatedx_=0 _isolatedy_=256069
+1042s
+>>>> LIMWS ans=234727731 _isolatedx_=0 _isolatedy_=7286
+3019s
+BscGd ans=1.0000 isolated=0.1699
+MWDCS ans=1 isolated=0.1707
+LIMWS ans=0.9678 isolated=0.0049
