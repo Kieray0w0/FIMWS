@@ -76,7 +76,7 @@ struct SSSP{
 	}
 };
 
-struct EWBG{// edge-weighted bipartite graph
+struct EWBG{// Edge-Weighted Bipartite Graph
 	int nx,ny,m;
 	wtype N;
 	bool positive;
@@ -253,7 +253,7 @@ struct EWBG{// edge-weighted bipartite graph
 };
 
 
-struct MWPM{
+struct MWPM{ // Maximum Weight Perfect Matching
 	int nx,ny,n;
 	wtype N; 
 	vector<vector<piw>>EX,EY,Ex,Ey;//[v,w]
@@ -521,7 +521,7 @@ struct MWPM{
 	}
 };
 
-struct MWM{
+struct MWM{ // Maximum Weight Matching
 	int nx,ny,n,N; 
 	bool mx;
 	vector<vector<piw>>EX,EY;//[v,w]
@@ -565,7 +565,7 @@ struct MWM{
 	}
 };
 
-struct MWMM{
+struct MWMM{ // Maximum Weight Maximum Matching
 	int nx,ny,n;
 	wtype N; 
 	bool mx;
@@ -614,7 +614,7 @@ struct MWMM{
 	}
 };
 
-struct EWDCBG{// edge-weighted degree-constrained bipartite graph
+struct EWDCBG{// Edge-Weighted Degree-Constrained Bipartite Graph
 	int nx,ny,m;
 	wtype N;
 	bool positive;
@@ -832,7 +832,7 @@ struct EWDCBG{// edge-weighted degree-constrained bipartite graph
 
 wtype maxN=1ll<<60;
 
-struct MWPDCS{
+struct MWPDCS{ // Maximum Weight Perfect Degree-Constrained Subgraph
 	int nx,ny,n,m,capacitysum;
 	wtype N; 
 	vector<wtype>weight,w;//w[eid] 1..m 
@@ -1292,7 +1292,7 @@ struct BasicGreedy{
 	}
 };
 
-struct MWDCS{//
+struct MWDCS{// Maximum Weight Degree-Constrained Subgraph
 	int nx,ny,n,m;
 	bool mx;
 	wtype N;
@@ -1398,7 +1398,7 @@ wtype MWDCSW(EWDCBG&G){
 	return W;
 }
 
-struct FIMWS{
+struct FIMWS{ // Fewest Isolated-vertices Maximum Weight Subgraph
 	int nx,ny,n,m;
 	bool mx;
 	wtype N,W;
